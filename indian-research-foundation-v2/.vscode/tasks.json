@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run static site",
+			"type": "shell",
+			"command": "python",
+			"args": [
+				"-m",
+				"http.server",
+				"5500"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Run static site (npx)",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"--yes",
+				"http-server",
+				".",
+				"-p",
+				"5500"
+			],
+			"isBackground": true,
+			"group": "build"
+		},
+		{
+			"label": "Run static site (npx cmd)",
+			"type": "shell",
+			"command": "npx.cmd",
+			"args": [
+				"--yes",
+				"http-server",
+				".",
+				"-p",
+				"5500"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
