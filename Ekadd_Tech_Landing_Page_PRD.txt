@@ -1,0 +1,354 @@
+EKADD TECH
+Research & Development Excellence
+
+PRODUCT REQUIREMENTS DOCUMENT
+Modern Landing Page  -  UI/UX Specification
+[ 01. DOCUMENT OVERVIEW ]
+Product Requirements Document
+
+
+Document Version
+v1.0
+Date
+March 2026
+
+Product
+Ekadd Tech Landing Page
+Status
+Draft - Ready for Design
+
+Prepared For
+Ekadd Technologies
+Priority
+High
+
+
+This document defines the complete product requirements for the Ekadd Tech modern landing page redesign. It covers visual design philosophy, section-by-section UI specifications, typography, image strategy, color system, and functional behavior. All design decisions are guided by the goal of communicating academic credibility and innovative technology leadership.
+
+[ 02. PRODUCT OBJECTIVES ]
+Goals & Success Criteria
+The redesigned landing page must achieve the following outcomes:
+Establish Ekadd Tech as a credible, modern research and publication support brand
+Generate qualified leads from UG, PG, and PhD scholars across India
+Clearly communicate service offerings - IEEE projects, journal publication, thesis writing, data analysis
+Drive conversions via enquiry forms, WhatsApp CTA, and phone call
+Deliver a premium, mobile-first experience using cutting-edge UI patterns
+
+
+[ 03. VISUAL IDENTITY SYSTEM ]
+Design Language
+The visual identity should feel scholarly yet innovative - bridging the gap between academic rigor and modern tech aesthetics. The design takes inspiration from premium SaaS and EdTech products.
+
+Typography
+Use a dual-font system for contrast and hierarchy:
+Primary Font
+Montserrat - Headings, navigation, CTAs, section labels
+Body Font
+Inter - Body copy, descriptions, form labels, footnotes
+Accent / Quote
+Lora (serif) - Testimonials and pull-quotes only
+Font Import
+Google Fonts CDN: Montserrat (400, 600, 700, 800), Inter (400, 500, 600)
+Base Size
+16px body | 48-72px hero headline | 28-36px section titles
+Line Height
+1.6 for body text | 1.2 for headlines
+
+Color Palette
+Ekadd Red (Primary Accent)
+#E31E24 - CTAs, buttons, highlights, borders, hover states
+Charcoal Black (Primary Text)
+#1A1A1A - Headings, nav, footer background
+Dark Grey (Secondary)
+#2C2C2C - Section backgrounds, card backgrounds
+Warm White
+#FFF5F5 - Light section backgrounds, card fills
+Soft Grey
+#555555 - Body text on light backgrounds
+Pure White
+#FFFFFF - Text on dark backgrounds, card content
+Gradient
+Linear: #1A1A1A ? #2C2C2C (135�) - Hero section overlay
+
+
+[ 04. BACKGROUND & IMAGE STRATEGY ]
+Website Background Image
+The hero section should use a high-resolution photograph as the full-viewport background. All image sourcing should use Unsplash or licensed stock only.
+
+Hero Section Background
+Image Theme
+Abstract academic/tech - glowing neural network, circuit board, or data visualization
+Suggested Query
+"nanobanana" keyword - use nano banana placeholder for CMS preview
+Overlay
+Dark gradient overlay: rgba(26,26,46,0.82) over image for text legibility
+Image Size
+Minimum 1920�1080px, WebP format for performance
+Fallback
+CSS gradient #1A1A1A ? #2C2C2C if image fails to load
+Position
+object-fit: cover | object-position: center center
+
+Post / Blog Card Images
+All post card images and service section visual placeholders must use:
+Placeholder Source
+nano banana - used as image placeholder keyword in CMS and dev environment
+Image Aspect Ratio
+16:9 for blog/news cards | 1:1 for team/faculty avatars | 4:3 for service cards
+Card Image Style
+Rounded corners (border-radius: 12px) with soft drop shadow
+Lazy Loading
+All images use loading='lazy' attribute for performance
+Alt Text
+Required on every image for accessibility compliance (WCAG 2.1 AA)
+
+
+[ 05. PAGE SECTION SPECIFICATIONS ]
+Landing Page Structure
+The page is structured as a single-page scroll with smooth anchor navigation. Each section is defined below with layout, content, and interaction requirements.
+
+Section 1 - Navigation Bar
+Layout
+Fixed sticky navbar | full-width | height: 72px
+Background
+rgba(26,26,46,0.96) with backdrop-filter: blur(12px)
+Logo
+Ekadd Tech wordmark - Montserrat 800, EKADD in red (#E31E24) + Tech in white, border: red outline
+Nav Links
+Home | Services | Research | Publications | About | Contact
+CTA Button
+"Get Started" - #E31E24 red background, white text, pill shape
+Mobile
+Hamburger menu with slide-in drawer on =768px
+
+Section 2 - Hero Section
+Layout
+Full viewport height (100vh) | centered content
+Background
+nano banana placeholder image + dark gradient overlay
+Headline
+"Empowering Research. Publishing Excellence." - Montserrat 800, 72px, white
+Subheading
+"IEEE Projects | Journal Publication | PhD Guidance | Thesis Writing" - Inter 20px
+Primary CTA
+"Explore Services" - #E31E24 filled button, 56px height, pill
+Secondary CTA
+"Talk to an Expert" - white outlined button
+Trust Badge
+ISO Certified badge + "500+ Scholars Guided" counter
+
+Section 3 - Services Grid
+Layout
+3-column grid (2-col on tablet, 1-col on mobile)
+Background
+#FFF5F5 (Warm White)
+Card Style
+White card | 12px radius | hover: lift shadow + #E31E24 top border
+Card Image
+nano banana placeholder (4:3 aspect, top of card)
+Services Listed
+IEEE Projects | PhD Guidance | Paper Writing | Thesis | Data Analysis | MATLAB/Python
+Icon Style
+Line icons (Lucide or Phosphor) in #E31E24 red, 32px
+
+Section 4 - Research Domains
+Layout
+Dark section (#2C2C2C) with tag/chip cloud layout
+Background
+#2C2C2C Charcoal with subtle grid pattern overlay
+Chips
+Rounded pill tags, #E31E24 red border, white text on hover
+Domains
+AI | ML | Deep Learning | IoT | Cyber Security | Cloud | Data Science | Blockchain | Civil | Mechanical | Robotics + more
+Animation
+Staggered fade-in on scroll (Intersection Observer)
+
+Section 5 - Research Process
+Layout
+Horizontal stepper on desktop | vertical timeline on mobile
+Background
+White with subtle diagonal stripe
+Steps
+1. Topic Selection ? 2. Proposal Development ? 3. Implementation ? 4. Documentation & Publication
+Step Style
+Numbered circle (#E31E24 red) + step title + short description
+Connector
+Dashed #E31E24 red line between steps
+
+Section 6 - Publication Support
+Layout
+3-column card grid
+Background
+#FFF5F5
+Cards
+Scopus Indexed | SCI / SCIE Journals | UGC Care Listed
+Card Image
+nano banana placeholder image at card top
+Badge
+"High Impact" badge on SCI card - #E31E24 red label
+
+Section 7 - Testimonials
+Layout
+Horizontal scroll carousel | auto-play 4s interval
+Background
+#1A1A1A charcoal dark
+Quote Font
+Lora italic, 20px, pure white
+Avatar
+nano banana placeholder (1:1 circle, 64px)
+Attribution
+Scholar name + degree + university - Inter 14px grey
+
+Section 8 - Contact Section
+Layout
+Two-column: form left | contact info right
+Background
+White
+Form Fields
+Name | Email | Phone | Research Domain (dropdown) | Message
+CTA
+"Send Enquiry" - #E31E24 red filled, full-width on mobile
+Contact Info
+Address | Email: ekaddprojects@gmail.com | Phone: +91 6380042260 | 04652-358269
+Map Embed
+Google Maps embed - Nagercoil location
+
+Section 9 - Footer
+Layout
+4-column grid: Logo+About | Services | Quick Links | Contact
+Background
+#1A1A1A charcoal with #E31E24 red top border (4px)
+Bottom Bar
+Copyright (c) Ekadd Technologies | Privacy Policy | Terms
+Social Icons
+LinkedIn | Instagram | YouTube - 24px white icons
+
+
+[ 06. TECHNICAL REQUIREMENTS ]
+Frontend & Performance Specifications
+
+Tech Stack
+HTML
+HTML5 - Semantic markup, <header>, <nav>, <section>, <footer>, <main>
+CSS3
+Custom CSS3 + CSS Variables for brand colors - Flexbox + CSS Grid layout
+Fonts
+Google Fonts via CDN - Montserrat, Inter, Lora
+Icons
+Font Awesome 6 Free CDN OR SVG inline icons - no framework dependency
+JavaScript
+Vanilla JS (ES6+) - DOM manipulation, event listeners, Intersection Observer API
+Animations
+AOS.js (Animate On Scroll) CDN - fade-up, zoom-in, slide effects
+Libraries
+jQuery 3.x (optional) | SwiperJS (carousel) | CounterUp.js (stat counters)
+Build Tools
+No build step required - pure HTML/CSS/JS deployable to any static host
+Hosting
+GitHub Pages / Netlify / cPanel shared hosting - static file deployment
+Forms
+Formspree or EmailJS - no backend needed for contact form submission
+
+Performance Targets
+Lighthouse Score
+=90 Performance | =95 Accessibility | =90 SEO
+First Contentful Paint
+< 1.5 seconds
+Largest Contentful Paint
+< 2.5 seconds
+Time to Interactive
+< 3.0 seconds
+CLS
+< 0.1 (no layout shift)
+Image Format
+WebP with JPEG/PNG fallback
+
+Responsive Breakpoints
+Mobile
+= 480px - Single column, hamburger nav, stacked cards
+Tablet
+481-768px - 2-col grids, condensed hero
+Desktop
+769-1280px - Full 3-col grid, horizontal stepper
+Wide Desktop
+= 1281px - Max content width 1200px, centered
+
+
+[ 07. ACCESSIBILITY & SEO ]
+Standards & Compliance
+WCAG 2.1 Level AA compliance across all interactive elements
+Minimum contrast ratio 4.5:1 for normal text, 3:1 for large text
+All images include descriptive alt attributes
+Keyboard navigable - focus styles visible on all interactive elements
+ARIA labels on icon-only buttons and navigation
+Semantic HTML5 elements: <header>, <nav>, <main>, <section>, <footer>
+Meta title and description tags for each page
+Open Graph tags for social sharing preview
+Structured data (JSON-LD) for Organization and LocalBusiness
+Sitemap.xml and robots.txt
+
+
+[ 08. INTERACTIONS & ANIMATIONS ]
+Motion Design Principles
+All animations should feel smooth and purposeful - never distracting. Motion should reinforce hierarchy and guide attention.
+
+Scroll Reveal
+Fade-up on section entry (duration: 0.5s, delay: staggered 0.1s)
+Card Hover
+translateY(-6px) + box-shadow increase (0.2s ease-out)
+Button Hover
+Background darken 10% + scale(1.02) (0.15s)
+Navbar Scroll
+Background opacity 0?1 as user scrolls past hero
+Counter Animation
+Number count-up on stats entering viewport
+Carousel
+Smooth CSS transform slide with dot indicators
+Form Focus
+Crimson bottom border slide-in on input focus
+
+
+[ 09. DELIVERABLES & MILESTONES ]
+Project Timeline
+Week 1
+Wireframes - Low-fidelity wireframes for all 9 sections
+Week 2
+High-fidelity Figma mockups - Desktop + Mobile
+Week 3
+Frontend development - HTML5 structure + CSS3 styling + JS interactivity
+Week 4
+Integration - Forms, Google Maps, animations, content
+Week 5
+QA & Testing - Cross-browser, mobile, performance audit
+Week 6
+Launch - Deploy to production, DNS, SEO submission
+
+Acceptance Criteria
+All 9 sections rendered correctly across Chrome, Safari, Firefox, Edge
+Mobile layout verified on iOS Safari and Android Chrome
+Lighthouse Performance =90 on desktop and =75 on mobile
+Contact form submits successfully and sends email notification
+All nano banana image placeholders replaced with real content images before launch
+ISO certification badge and Scopus/SCI logos displayed with proper licensing
+
+
+[ 10. APPENDIX ]
+Brand Information
+Company
+Ekadd Technologies (ISO Certified)
+Address
+3rd Floor Kamaraj Building, Near Anna Bus Stand, Nagercoil - 629001
+Email
+ekaddprojects@gmail.com
+Phone
++91 6380042260 | 04652-358269
+Focus Areas
+IEEE Projects, Journal Publication, PhD Guidance, Thesis, Data Analysis
+Target Audience
+UG, PG, and PhD scholars across India
+
+This PRD is version 1.0 and subject to revision. All design decisions should be validated with stakeholder review before moving to development. Nano banana placeholders are used throughout the document and CMS as temporary image references - these must be replaced with licensed photography or original visuals prior to the public launch.
+EKADD TECH  |  Landing Page PRD    v1.0  |  2026
+
+Ekadd Tech - Confidential Product Document  |  Page 1
+
